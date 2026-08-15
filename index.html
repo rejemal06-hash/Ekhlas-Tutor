@@ -4,63 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekhlas Tutor - የቤት አስተማሪ አገልግሎት</title>
+    <title>Ekhlas Tutor - የእክላስ የቱቶር ትምህርት አገልግሎት</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f8f9fa; color: #333; text-align: center; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #0d6efd, #0a58ca); color: white; padding: 50px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        header h1 { font-size: 2.3rem; margin-bottom: 15px; }
-        header p { font-size: 1.1rem; opacity: 0.95; }
-        
-        .phone-container {
-            margin-top: 20px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #ffe600;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .phone-container a {
-            color: #ffe600;
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .slogan {
+            background-color: #ffc107;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-bottom: 2px solid #e0a800;
+        }
+        .container {
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            flex: 1;
+        }
+        .container h2 {
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+        .info-card {
+            background-color: #eef5ff;
+            border-left: 5px solid #0d6efd;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: left;
+            border-radius: 6px;
+        }
+        .info-card h3 {
+            color: #0a58ca;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .info-card ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+        .info-card li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        .phone-numbers {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #0d6efd;
+            margin: 15px 0;
+        }
+        .phone-numbers a {
+            color: #0d6efd;
             text-decoration: none;
         }
-        .phone-container a:hover {
-            text-decoration: underline;
-        }
-
-        .container { max-width: 650px; margin: 40px auto; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .container h2 { color: #0d6efd; margin-bottom: 15px; }
-        .container p { color: #555; margin-bottom: 25px; font-size: 1.05rem; }
-        
-        .btn { 
-            display: inline-block; 
-            padding: 14px 32px; 
-            background: #198754; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 30px; 
-            font-weight: bold; 
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #198754;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
             font-size: 1.1rem;
+            margin-top: 10px;
             transition: background 0.3s ease;
         }
-        .btn:hover { background: #157347; }
-        
-        footer { margin-top: 50px; padding: 20px; background: #212529; color: #aaa; font-size: 0.9rem; }
+        .btn:hover {
+            background: #157347;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background: #212529;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>እንኳን ወደ Ekhlas Tutor በደህና መጡ!</h1>
-        <p>ለልጅዎ ወይም ለራስዎ ብቁ የቤት አስተማሪዎችን በቀላሉ የሚያገኙበትን ፕላትፎርም ይዘንላችሁ መጥተናል!</p>
-        
-        <div class="phone-container">
-            📞 <a href="tel:0946521258">0946521258</a> / <a href="tel:0967665105">0967665105</a>
-        </div>
+        <p>ለልጅዎ ወይም ለራስዎ ብቁ የቤት አስተማሪዎችን በቀላሉ የሚያገኙበት ፕላትፎርም</p>
     </header>
+
+    <!-- የስሎጋን ማሳወቂያ -->
+    <div class="slogan">
+        ✨ የልጆቻችሁን የነገን የትምህርት ህይወት ለመቅረፅ እንተጋለን!
+    </div>
 
     <div class="container">
         <h2>አገልግሎታችን በቅርብ ቀን ይጀምራል!</h2>
-        <p>ተማሪዎችንና ብቁ አስተማሪዎችን በቀላሉ ለማገናኘት ዝግጅታችንን እያጠናቀቅን እንገኛለን።</p>
-        <a href="https://t.me/ekhlastutores" class="btn" target="_blank">በቴሌግራም ለማወራት እዚህ ይጫኑ</a>
+        <p>ተማሪዎችን እና ብቁ አስተማሪዎችን በቀላሉ ለማገናኘት ዝግጅታችንን እያጠናቀቅን እንገኛለን።</p>
+
+        <!-- የአድራሻ እና የአካባቢ መረጃ -->
+        <div class="info-card">
+            <h3>📍 የምንገኝባቸው እና አገልግሎት የምንሰጥባቸው አካባቢዎች፦</h3>
+            <ul>
+                <li>• <strong>አዲስ አበባ ከተማ አስተዳደር፦</strong> ንፋስ ስልክ ላፍቶ ክፍለ ከተማ (በጀሞ 1፣ ጀሞ 3 እና ለቡ)</li>
+                <li>• <strong>ኦሮሚያ ክልል ሸገር ከተማ አስተዳደር፦</strong> ፉሪ ክፍለ ከተማ እና አካባቢዋ (በፉሪ እና ጀሞ 2)</li>
+            </ul>
+        </div>
+
+        <!-- የስልክ ቁጥሮች -->
+        <div class="phone-numbers">
+            📞 ለበለጠ መረጃ እና ለአገልግሎት ጥያቄ፦<br>
+            <a href="tel:0946521258">0946521258</a> / <a href="tel:0967665105">0967665105</a>
+        </div>
+
+        <a href="https://t.me/ekhlas-Tutor" class="btn" target="_blank">በቴሌግራም ለማነጋገር እዚህ ይጫኑ</a>
     </div>
 
     <footer>
