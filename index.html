@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="am">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekhlas Tutor - የእክላስ የቱቶር ትምህርት አገልግሎት</title>
+    <title>Ekhlas Tutor - ኢህላስ የቱቶር ትምህርት አገልግሎት</title>
     <style>
         * {
             box-sizing: border-box;
@@ -87,19 +86,39 @@
             color: #0d6efd;
             text-decoration: none;
         }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
         .btn {
             display: inline-block;
-            padding: 12px 30px;
-            background: #198754;
+            padding: 14px 25px;
             color: white;
             text-decoration: none;
             border-radius: 25px;
             font-weight: bold;
-            font-size: 1.1rem;
-            margin-top: 10px;
+            font-size: 1.05rem;
             transition: background 0.3s ease;
         }
-        .btn:hover {
+        .btn-parent {
+            background: #0d6efd;
+        }
+        .btn-parent:hover {
+            background: #0b5ed7;
+        }
+        .btn-teacher {
+            background: #0dcaf0;
+            color: #000;
+        }
+        .btn-teacher:hover {
+            background: #31d2f2;
+        }
+        .btn-telegram {
+            background: #198754;
+        }
+        .btn-telegram:hover {
             background: #157347;
         }
         footer {
@@ -118,7 +137,6 @@
         <p>ለልጅዎ ወይም ለራስዎ ብቁ የቤት አስተማሪዎችን በቀላሉ የሚያገኙበት ፕላትፎርም</p>
     </header>
 
-    <!-- የስሎጋን ማሳወቂያ -->
     <div class="slogan">
         ✨ የልጆቻችሁን የነገን የትምህርት ህይወት ለመቅረፅ እንተጋለን!
     </div>
@@ -127,7 +145,6 @@
         <h2>አገልግሎታችን በቅርብ ቀን ይጀምራል!</h2>
         <p>ተማሪዎችን እና ብቁ አስተማሪዎችን በቀላሉ ለማገናኘት ዝግጅታችንን እያጠናቀቅን እንገኛለን።</p>
 
-        <!-- የአድራሻ እና የአካባቢ መረጃ -->
         <div class="info-card">
             <h3>📍 የምንገኝባቸው እና አገልግሎት የምንሰጥባቸው አካባቢዎች፦</h3>
             <ul>
@@ -136,13 +153,21 @@
             </ul>
         </div>
 
-        <!-- የስልክ ቁጥሮች -->
         <div class="phone-numbers">
             📞 ለበለጠ መረጃ እና ለአገልግሎት ጥያቄ፦<br>
             <a href="tel:0946521258">0946521258</a> / <a href="tel:0967665105">0967665105</a>
         </div>
 
-        <a href="https://t.me/ekhlastutores" class="btn" target="_blank">በቴሌግራም ለማነጋገር እዚህ ይጫኑ</a>
+        <div class="btn-group">
+            <!-- የወላጆች/ተማሪዎች መመዝገቢያ -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJK3fzZmLyQlzI83WnQxLYL4ogRdezOs53fG5qiEl9emiO7g/viewform?usp=publish-editor" class="btn btn-parent" target="_blank">👨‍👩‍👧‍👦 ለወላጆች፦ አስተማሪ ለመጠየቅ ይመዝገቡ</a>
+            
+            <!-- የአስተማሪዎች መመዝገቢያ -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScFqAjIGWfa5Tj0jR54K7P5pSGG5-fBn_QtoCJ7t9An9WOCBw/viewform?usp=publish-editor" class="btn btn-teacher" target="_blank">👨‍🏫 ለአስተማሪዎች፦ ለማስተማር ይመዝገቡ</a>
+
+            <!-- የቴሌግራም አዝራር -->
+            <a href="https://t.me/ekhlastutores" class="btn btn-telegram" target="_blank">💬 በቴሌግራም ለማነጋገር እዚህ ይጫኑ</a>
+        </div>
     </div>
 
     <footer>
@@ -151,3 +176,4 @@
 
 </body>
 </html>
+
